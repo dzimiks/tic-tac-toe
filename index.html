@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game">
+      <h2 class="game__name">TIC TAC TOE</h2>
+
+      <h3 class="game__result collapse hide"></h3>
+
+      <form class="game__form collapse hide" action="#">
+        <div class="form__group">
+          <input type="text" id="username" name="username" class="form__field" placeholder="Your Name">
+          <label for="username" class="form__label">Your Name</label>
+          <p id="form-error-message"></p>
+        </div>
+
+        <button class="button button--raised button--submit" type="submit">
+          <i class="material-icons button__icon">send</i>
+          <span class="button__ripple"></span>
+          Submit
+        </button>
+      </form>
+
+      <div class="board">
+        <div class="board__row">
+          <div data-cell-index="0" class="board__box"></div>
+          <div data-cell-index="1" class="board__box"></div>
+          <div data-cell-index="2" class="board__box"></div>
+        </div>
+
+        <div class="board__row">
+          <div data-cell-index="3" class="board__box"></div>
+          <div data-cell-index="4" class="board__box"></div>
+          <div data-cell-index="5" class="board__box"></div>
+        </div>
+
+        <div class="board__row">
+          <div data-cell-index="6" class="board__box"></div>
+          <div data-cell-index="7" class="board__box"></div>
+          <div data-cell-index="8" class="board__box"></div>
+        </div>
+      </div>
+
+      <button class="button button--raised button--restart">
+        <i class="material-icons button__icon">sync</i>
+        <span class="button__ripple"></span>
+        Restart Game
+      </button>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <h3 class="sidebar__title">Winners</h3>
+      </div>
+
+      <div class="sidebar__content">
+        <nav class="sidebar-list"></nav>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

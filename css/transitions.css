@@ -1,0 +1,10 @@
+.collapse {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.collapse.hide {
+  opacity: 0;
+}

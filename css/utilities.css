@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-color);
+}
+
+#form-error-message {
+  visibility: hidden;
+  color: var(--error-color);
+  margin-top: 1rem;
+  text-align: left;
+  height: 1rem;
+}
